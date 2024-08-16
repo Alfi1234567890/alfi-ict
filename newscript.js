@@ -197,7 +197,7 @@ for(let i=0;i<array.length;i++){
 console.log(array[i]);
 }
 
-var obj= {fname:'ann',age:40,place:'tvm'}
+var obj= {fname:'alfi',age:40,place:'tvm'}
 //for in loop
 for (const i in obj) {
    console.log(obj[i]);
