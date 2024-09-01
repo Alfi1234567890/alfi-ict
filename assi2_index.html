@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Website</title>
+    <style>
+        .error { color: red; }
+        .strength {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .strength.strong { color: green; }
+        .strength.medium { color: orange; }
+        .strength.poor { color: red; }
+    </style>
+</head>
+<body>
+    <h2>SignUp Page</h2>
+    <form id="signupForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <div id="emailError" class="error"></div>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+        <div id="phoneError" class="error"></div>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <div id="passwordError" class="error"></div>
+        <div id="passwordStrength" class="strength"></div>
+        
+        <button type="submit">Sign Up</button>
+    </form>
+    
+    <h2>Login Page</h2>
+    <form id="loginForm">
+        <label for="loginEmail">Email:</label>
+        <input type="email" id="loginEmail" name="email" required>
+        <div id="loginEmailError" class="error"></div>
+        
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="password" required>
+        <div id="loginPasswordError" class="error"></div>
+        
+        <button type="submit">Login</button>
+    </form>
+
+    <script src="form-validation.js"></script>
+</body>
+</html>
